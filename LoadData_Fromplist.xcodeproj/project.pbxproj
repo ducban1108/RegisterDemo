@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9338CE142266B52100D25D65 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9338CE132266B52100D25D65 /* DataServices.swift */; };
+		9338CE172266C05400D25D65 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9338CE162266C05400D25D65 /* City.swift */; };
+		9338CE192266C26900D25D65 /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9338CE182266C26900D25D65 /* District.swift */; };
 		9378BE862260870300D15A11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9378BE852260870300D15A11 /* AppDelegate.swift */; };
 		9378BE882260870300D15A11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9378BE872260870300D15A11 /* ViewController.swift */; };
 		9378BE8B2260870300D15A11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9378BE892260870300D15A11 /* Main.storyboard */; };
 		9378BE8D2260870400D15A11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9378BE8C2260870400D15A11 /* Assets.xcassets */; };
 		9378BE902260870400D15A11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9378BE8E2260870400D15A11 /* LaunchScreen.storyboard */; };
+		9378BE982260873F00D15A11 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9378BE972260873F00D15A11 /* TableViewController.swift */; };
+		9378BE9A226087BF00D15A11 /* Districts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9378BE99226087BF00D15A11 /* Districts.plist */; };
+		9378BE9C226087C800D15A11 /* Cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9378BE9B226087C800D15A11 /* Cities.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9338CE132266B52100D25D65 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		9338CE162266C05400D25D65 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		9338CE182266C26900D25D65 /* District.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = District.swift; sourceTree = "<group>"; };
 		9378BE822260870300D15A11 /* LoadData_Fromplist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadData_Fromplist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9378BE852260870300D15A11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9378BE872260870300D15A11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,9 @@
 		9378BE8C2260870400D15A11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9378BE8F2260870400D15A11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9378BE912260870400D15A11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9378BE972260873F00D15A11 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		9378BE99226087BF00D15A11 /* Districts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Districts.plist; path = ../../../Downloads/Districts.plist; sourceTree = "<group>"; };
+		9378BE9B226087C800D15A11 /* Cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Cities.plist; path = ../../../Downloads/Cities.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +47,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9338CE152266C04000D25D65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9338CE132266B52100D25D65 /* DataServices.swift */,
+				9338CE182266C26900D25D65 /* District.swift */,
+				9338CE162266C05400D25D65 /* City.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9338CE1A2266C4EC00D25D65 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9378BE872260870300D15A11 /* ViewController.swift */,
+				9378BE972260873F00D15A11 /* TableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		9378BE792260870300D15A11 = {
 			isa = PBXGroup;
 			children = (
@@ -54,10 +85,13 @@
 		9378BE842260870300D15A11 /* LoadData_Fromplist */ = {
 			isa = PBXGroup;
 			children = (
-				9378BE852260870300D15A11 /* AppDelegate.swift */,
-				9378BE872260870300D15A11 /* ViewController.swift */,
+				9338CE1A2266C4EC00D25D65 /* Controller */,
+				9338CE152266C04000D25D65 /* Model */,
 				9378BE892260870300D15A11 /* Main.storyboard */,
 				9378BE8C2260870400D15A11 /* Assets.xcassets */,
+				9378BE852260870300D15A11 /* AppDelegate.swift */,
+				9378BE99226087BF00D15A11 /* Districts.plist */,
+				9378BE9B226087C800D15A11 /* Cities.plist */,
 				9378BE8E2260870400D15A11 /* LaunchScreen.storyboard */,
 				9378BE912260870400D15A11 /* Info.plist */,
 			);
@@ -124,6 +158,8 @@
 			files = (
 				9378BE902260870400D15A11 /* LaunchScreen.storyboard in Resources */,
 				9378BE8D2260870400D15A11 /* Assets.xcassets in Resources */,
+				9378BE9C226087C800D15A11 /* Cities.plist in Resources */,
+				9378BE9A226087BF00D15A11 /* Districts.plist in Resources */,
 				9378BE8B2260870300D15A11 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9338CE142266B52100D25D65 /* DataServices.swift in Sources */,
+				9338CE172266C05400D25D65 /* City.swift in Sources */,
+				9338CE192266C26900D25D65 /* District.swift in Sources */,
 				9378BE882260870300D15A11 /* ViewController.swift in Sources */,
+				9378BE982260873F00D15A11 /* TableViewController.swift in Sources */,
 				9378BE862260870300D15A11 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
